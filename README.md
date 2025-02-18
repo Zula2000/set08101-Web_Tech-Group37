@@ -30,3 +30,4 @@ We are planning a a text based adventure game within in a website, the webiste w
 * Graphics
 
 # Navigation Diagram
+https://github.com/Zula2000/set08101-Web_Tech-Group37/blob/main/Report%20Docs/Initial%20Tree%20Diagram.png
