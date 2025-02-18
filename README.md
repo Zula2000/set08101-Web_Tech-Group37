@@ -19,9 +19,18 @@ Due Date: 3PM on Friday the 28th of Feburary 2025.
 # Design Plan
 We are planning a a text based adventure game within in a website, the webiste will have a start screen that will lead to a series of pages that have options (actions that your character will take), each option will progress to a different page with different outcomes and more options to continue your text based story.
 
+What feature are we all responsible for?
+Option/ Game Elements - 
+Home/Start page - Jamie
+Navigation Links- James
+CSS - 
+Headers and Footers - Megan
+Text Adventure Pages - All Responsible
+
 # Background Research
-Possible websites to research
+Possible websites to research:
 * https://aidungeon.com/
+* https://adarkroom.doublespeakgames.com/
 
 # Feature List
 * Start Page
