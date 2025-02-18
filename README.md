@@ -28,6 +28,7 @@ We are planning a a text based adventure game within in a website, the webiste w
 * Working local links
 * Good CSS
 * Graphics
+* Story Elements
 
 # Navigation Diagram
 (https://github.com/user-attachments/assets/a6377a4b-d19e-4b95-b45f-0ba739fedca3)
