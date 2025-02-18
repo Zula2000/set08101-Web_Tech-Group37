@@ -1,5 +1,5 @@
 # Web Tech Assessment #1 Group 37
-Report Requirements:
+**Report Requirements:**
 1. A description of the overall site that your group is planning with enough background context for your reader to understand what you are trying to do.
     
 2. A summary of any background research into other similar sites, or useful technologies, libraries, or APIs that you have individually investigated with a description of how this has contributed to your group’s project idea and design. This can be related to the group’s site as a whole as well as for the specific feature you are responsible for in the group.
@@ -22,3 +22,9 @@ We are planning a a text based adventure game within in a website, the webiste w
 # Background Research
 
 # Feature List
+* Start Page
+* Header/Navbar
+* Footer
+* Working local links
+* Good CSS
+* Graphics
