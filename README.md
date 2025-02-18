@@ -29,7 +29,8 @@ What feature are we all responsible for?
 * Options/ Game Elements - Jamie
 * Home/Start page - 
 * Navbar/ Navigation Links - James
-* CSS - 
+* CSS -
+* Javascript -
 * Headers and Footers - Megan
 * Text Adventure Pages - All Responsible
 
