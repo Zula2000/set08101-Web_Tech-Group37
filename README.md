@@ -20,6 +20,8 @@ Due Date: 3PM on Friday the 28th of Feburary 2025.
 We are planning a a text based adventure game within in a website, the webiste will have a start screen that will lead to a series of pages that have options (actions that your character will take), each option will progress to a different page with different outcomes and more options to continue your text based story.
 
 # Background Research
+Possible websites to research
+* https://aidungeon.com/
 
 # Feature List
 * Start Page
