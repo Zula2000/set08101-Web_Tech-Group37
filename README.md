@@ -27,7 +27,7 @@ Possible websites to research:
 # Feature List
 What feature are we all responsible for?
 * Options/ Game Elements - Jamie
-* Home/Start page - 
+* Home/Start page - Sai
 * Navbar/ Navigation Links - James
 * CSS -
 * Javascript -
