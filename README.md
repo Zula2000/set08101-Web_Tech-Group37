@@ -23,6 +23,7 @@ Our plan is to create a text-based adventure web game where you awake in a fores
 Possible websites to research:
 * https://aidungeon.com/
 * https://adarkroom.doublespeakgames.com/
+* https://writtenrealms.com/game
 
 # Feature List
 What feature are we all responsible for?
