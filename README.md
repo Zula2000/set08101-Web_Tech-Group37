@@ -16,6 +16,9 @@
 
 Due Date: 3PM on Friday the 28th of Feburary 2025. 
 
+# Webpage Description
+Our plan is to create a text-based adventure web game where you awake in a forest and have to navigate your way to safety while avoiding the dangers of the forest. This will be done by using hyperlinks to other pages as options, this will be how you progress your story. There will be a home page which will act as your start page where you can start your adventure.
+
 # Design Plan
 We are planning a a text based adventure game within in a website, the webiste will have a start screen that will lead to a series of pages that have options (actions that your character will take), each option will progress to a different page with different outcomes and more options to continue your text based story.
 
