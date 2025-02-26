@@ -29,10 +29,10 @@ What feature are we all responsible for?
 * Options/ Game Elements - Jamie
 * Home/Start page - Sai
 * Navbar/ Navigation Links - James
-* CSS -
-* Javascript -
+* Javascript - Robbie
 * Headers and Footers - Megan
-* Text Adventure Pages - All Responsible
+* Text Adventure Pages/HTML - All Responsible
+* CSS - All Responsible
 
 # Navigation Diagram
 (https://github.com/user-attachments/assets/a6377a4b-d19e-4b95-b45f-0ba739fedca3)
