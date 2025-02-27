@@ -36,5 +36,9 @@ What feature are we all responsible for?
 * CSS - All Responsible
 
 # Navigation Diagram
-(https://github.com/user-attachments/assets/a6377a4b-d19e-4b95-b45f-0ba739fedca3)
+![image](https://github.com/user-attachments/assets/9e2d9a5e-9237-42cb-85fd-bd44b20e384e)
+
+# Wireframe Sketch
+![image](https://github.com/user-attachments/assets/6c3abf70-5080-4c39-89c9-af979d540820)
+
 
