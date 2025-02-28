@@ -48,3 +48,4 @@ Death Screen
 ![image](https://github.com/user-attachments/assets/f23e9cce-71b5-4bd2-980b-e6cc2d02134f)
 
 # Group Plan
+![image](https://github.com/user-attachments/assets/baae2db1-485c-443d-be2b-9b55ce0fbd13)
