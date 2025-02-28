@@ -39,6 +39,8 @@ What feature are we all responsible for?
 ![image](https://github.com/user-attachments/assets/9e2d9a5e-9237-42cb-85fd-bd44b20e384e)
 
 # Wireframe Sketch
+First Adventure Page
 ![image](https://github.com/user-attachments/assets/6c3abf70-5080-4c39-89c9-af979d540820)
 
+Death Screen 
 
