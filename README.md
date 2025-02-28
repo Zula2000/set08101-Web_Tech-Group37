@@ -40,9 +40,11 @@ What feature are we all responsible for?
 
 # Wireframe Sketch
 First Adventure Page
+
 ![image](https://github.com/user-attachments/assets/6c3abf70-5080-4c39-89c9-af979d540820)
 
 Death Screen 
+
 ![image](https://github.com/user-attachments/assets/f23e9cce-71b5-4bd2-980b-e6cc2d02134f)
 
-
+# Group Plan
