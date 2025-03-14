@@ -14,7 +14,7 @@
 
 7. (Optional) As appropriate: any additional sections that you deem fit to describe your group’s project, with specific attention paid to the features/functionality you are responsible for. For example, if you have decided to implement a particular feature as an extension to the core requirements then this would be the place to report on it. Similarly if you intend to save data within the browser, then some description of the kinds of data that you intend to store, how you will store it, and how it will be structured, should be reported on.
 
-Due Date: 3PM on Friday the 28th of Feburary 2025. 
+Due Date: 3PM on Friday the 28th of April 2025. 
 
 # Webpage Description
 Our plan is to create a text-based adventure web game where you awake in a forest and have to navigate your way to safety while avoiding the dangers of the forest. Each page will have a short paragraph to describe the scene, then we will use hyperlinks to other pages as options, this will be how you make actions as your character and progress your story. There will be a home page which will act as your start page where you can start your adventure, see credits, etc.
