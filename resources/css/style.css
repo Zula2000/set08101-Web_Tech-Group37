@@ -1,6 +1,13 @@
+/* Sets the style for the first heading */
 h1 {
   font-family: garamond;
   font-size: 50px;
+}
+
+/* Changes the colour of the background of the navbar */
+.topnav {
+  background-color: #b6b6b6;
+  overflow: hidden;
 }
 
 /* Styles the links inside the nav bar */
@@ -18,3 +25,11 @@ h1 {
   background-color: #ddd;
   color: blue;
 }
+
+/* changes the colour of the active link */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+
