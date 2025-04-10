@@ -24,6 +24,7 @@ h1 {
 /* Changes the colour of the links when you hover over them */
 .topnav a:hover {
   background-color: #ddd;
+  color: black;
 }
 
 /* changes the colour of the active link */
