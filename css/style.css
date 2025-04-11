@@ -18,9 +18,9 @@ h1 {
 }
 
 .button {
-  width:5px;
-  height:auto;
-  display:inline-block;
+  width: 15px;
+  height: auto;
+  display: inline-block;
 }
 
 /* Changes the colour of the background of the navbar */
