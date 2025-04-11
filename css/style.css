@@ -17,10 +17,10 @@ h1 {
   padding: 10px;
 }
 
-.button {
-  width: 15px;
-  height: auto;
-  display: inline-block;
+.divider {
+    width: 5px;
+    height: auto;
+    display: inline-block;
 }
 
 /* Changes the colour of the background of the navbar */
