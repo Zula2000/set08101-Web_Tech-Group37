@@ -15,7 +15,7 @@
 /* Centers the content on the page */
 .content {
   margin: auto;
-  width: 60%;
+  max-width: 400px;
   padding-top: 25px;
   padding-bottom: 25px;
   padding-left: 50px;
