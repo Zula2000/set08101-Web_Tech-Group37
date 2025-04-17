@@ -12,19 +12,16 @@ h1 {
 }
 
 .button {
-  margin-right: 10px;
-}
-
-.textCenter {
-  margin: auto;
-  width: 50%;
-  padding: 10px;
-}
-
-.divider {
-    width: 5px;
-    height: auto;
-    display: inline-block;
+  background: #298371;
+  color: white;
+  line-height: 104px;
+  width: 308px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  border-width: 0px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
 }
 
 /* Changes the colour of the background of the navbar */
