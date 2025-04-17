@@ -4,11 +4,6 @@ h1 {
   font-size: 50px;
 }
 
-/*Removes the lines underneath links*/
-a {
-  text-decoration: none;
-}
-
 /* Changes the colour of the background of the navbar */
 .topnav {
   background-color: #8b64e5;
