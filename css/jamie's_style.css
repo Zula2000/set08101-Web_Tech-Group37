@@ -12,9 +12,7 @@
   text-decoration: none;
 }
 
-.center {
+.content {
+  max-width: 500px;
   margin: auto;
-  width: 100%;
-  border: 3px black;
-  padding: 10px;
 }
