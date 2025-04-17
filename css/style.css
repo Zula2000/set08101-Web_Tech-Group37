@@ -11,6 +11,10 @@ h1 {
   padding: 10px;
 }
 
+.button {
+  margin-right: 10px;
+}
+
 .textCenter {
   margin: auto;
   width: 50%;
