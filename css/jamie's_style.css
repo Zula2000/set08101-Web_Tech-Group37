@@ -12,6 +12,7 @@
   text-decoration: none;
 }
 
+/* Centers the content on the page */
 .content {
   margin: auto;
   width: 60%;
