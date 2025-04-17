@@ -13,8 +13,8 @@
 }
 
 .content {
-  width: 500px;
+  margin: auto;
+  width: 60%;
   padding: 25px;
   border: 5px solid black;
-  margin: 100px;
 }
