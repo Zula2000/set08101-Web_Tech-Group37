@@ -4,6 +4,12 @@ h1 {
   font-size: 50px;
 }
 
+/* Sets the style for the second heading */
+h2 {
+  font-family: garamond;
+  font-size: 35px;
+}
+
 /* Sets the style for paragraph text */
 p {
   font-family: garamond;
