@@ -4,6 +4,13 @@ h1 {
   font-size: 50px;
 }
 
+.homeContent {
+  margin: auto;
+  width: 40%;
+  padding: 100px;
+  text-align: center;
+}
+
 /* Changes the colour of the background of the navbar */
 .topnav {
   background-color: #8b64e5;
