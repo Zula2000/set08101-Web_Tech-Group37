@@ -16,3 +16,12 @@ ul {
   padding: 0; /* Remove padding */
   margin: 0; /* Remove margins */
 }
+
+.inventory {
+  margin: auto;
+  width: 20%;
+  padding: 50px;
+  border: 3px solid #8b64e5;
+  text-align: center;
+  border-radius: 15px;
+}
