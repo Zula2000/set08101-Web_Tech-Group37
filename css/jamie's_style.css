@@ -1,20 +1,20 @@
 /* Jamie's CSS Style Page */
 
-/* Centers the content on the page */
-.content {
-  margin: auto;
-  width: 40%;
-  padding: 100px;
-  border: 3px solid #8b64e5;
-  text-align: center;
-  border-radius: 15px;
-}
-
 /* Edits unordered lists */
 ul {
   list-style-type: none; /* Remove bullets */
   padding: 0; /* Remove padding */
   margin: 0; /* Remove margins */
+}
+
+/* Centers the content on the page */
+.content {
+  margin: auto;
+  width: 40%;
+  padding: 20px 80px 20px 80px;
+  border: 3px solid #8b64e5;
+  text-align: center;
+  border-radius: 15px;
 }
 
 /* Gives inventory system a border */
