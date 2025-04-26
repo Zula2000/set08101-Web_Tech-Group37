@@ -24,14 +24,14 @@
   
     function openChest() {
       updateStory(`
-        <p>You open the chest and find an ancient scroll and a crystal that pulses with light. 🧾💎<br>
-        Your journey of magic and mystery begins...</p>
+        <p>You open the chest and find an ancient scroll and a crystal with a mysterious glow.<br>
+        Your journey now beings!</p>
       `);
     }
   
     function leaveChest() {
       updateStory(`
-        <p>You leave the chest untouched. As you walk away, a peaceful silence fills the room.<br>
+        <p>You leave the chest untouched. As you walk away, a silence fills the room.<br>
         Maybe some mysteries are better left unsolved.</p>
       `);
     }
