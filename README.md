@@ -26,14 +26,13 @@ Possible websites to research:
 * https://writtenrealms.com/game
 
 # Feature List
-What feature are we all responsible for?
-* Options/ Game Elements - Jamie
-* Home/Start page - Sai
-* Navbar/ Navigation Links - James
-* Javascript - Robbie
-* Headers and Footers - Megan
-* Text Adventure Pages/HTML - All Responsible
-* CSS - All Responsible
+* Options/ Game Elements
+* Home/Start page
+* Navbar/Navigation Links
+* Javascript
+* Headers and Footers
+* Text Adventure Pages/HTML
+* CSS
 
 # Navigation Diagram
 ![image](https://github.com/user-attachments/assets/9e2d9a5e-9237-42cb-85fd-bd44b20e384e)
@@ -47,6 +46,4 @@ Death Screen
 
 ![image](https://github.com/user-attachments/assets/f23e9cce-71b5-4bd2-980b-e6cc2d02134f)
 
-# Group Plan
-![image](https://github.com/user-attachments/assets/72f916cb-dbb4-42bc-b44c-0acbcaf88fa6)
 
