@@ -15,10 +15,10 @@ function loadGame() {
     
     if (!lastScene) {
         alert('No saved game found! Starting a new game...');
-        window.location.href = 'scenes/scene1.html';
+        window.location.href = 'Adventure Pages/scene1.html';
         return;
     }
     
     // Load the last scene
-    window.location.href = `scenes/${lastScene}.html`;
+    window.location.href = `Adventure Pages/${lastScene}.html`;
 }
