@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!-- Sai's HTML -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awakening - Forest Adventure</title>
+    <link rel="stylesheet" href="../css/sai_style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game-header">
+            <h1>Awakening in the Forest</h1>
+            <div class="game-stats">
+                <span id="health-display">Health: 100</span>
+                <span id="inventory-button" onclick="showInventory()">Inventory</span>
+                <span id="save-button" onclick="saveGame('scene1')">Save Game</span>
+            </div>
+        </div>
+        
+        <main>
+            <section class="scene">
+                <div class="scene-content">
+                    <p>You wake with a start, your head throbbing. The last thing you remember is hiking through the forest when a sudden storm hit. Now you find yourself lying on a bed of damp leaves, surrounded by towering trees. The forest is dense, and you have no idea which direction leads to safety.</p>
+                    <p>Your backpack is nearby, but it seems some of your supplies have scattered. The sun is beginning to set, casting long shadows through the trees. You need to find your way out before dark.</p>
+                </div>
+                
+                <div class="scene-choices">
+                    <button onclick="makeChoice('scene2.html', -5)">Search the immediate area for supplies (lose 5 health from exertion)</button>
+                    <button onclick="addItemToInventory('water_bottle', 'Water Bottle', 'scene2.html')">Check your backpack</button>
+                    <button onclick="makeChoice('scene2.html', 0)">Start walking immediately in a random direction</button>
+                </div>
+            </section>
+            
+            <!-- Inventory Panel (initially hidden) -->
+            <section id="inventory-panel" class="inventory hidden">
+                <h2>Your Inventory</h2>
+                <div id="inventory-items">
+                    <!-- Items will be inserted here -->
+                </div>
+                <button onclick="hideInventory()">Close Inventory</button>
+            </section>
+        </main>
+        
+        <footer>
+            <button class="small-button" onclick="window.location.href='sai_homepage.html'">Main Menu</button>
+        </footer>
+    </div>
+
+    <script>
+        // Initialize player data if not existing
+        if (!localStorage.getItem('playerHealth')) {
+            localStorage.setItem('playerHealth', '100');
+            localStorage.setItem('playerInventory', JSON.stringify([]));
+        }
+        
+        // Update health display
+        document.getElementById('health-display').innerText = 'Health: ' + localStorage.getItem('playerHealth');
+        
+        // Save current game state
+        function saveGame(sceneId) {
+            localStorage.setItem('lastScene', sceneId);
+            alert('Game saved!');
+        }
+        
+        // Make a choice and navigate
+        function makeChoice(nextScene, healthChange) {
+            let health = parseInt(localStorage.getItem('playerHealth'));
+            health += healthChange;
+            localStorage.setItem('playerHealth', health.toString());
+            localStorage.setItem('lastScene', nextScene.split('.')[0]);
+            window.location.href = nextScene;
+        }
+        
+        // Add item to inventory
+        function addItemToInventory(itemId, itemName, nextScene) {
+            let inventory = JSON.parse(localStorage.getItem('playerInventory'));
+            inventory.push({
+                id: itemId,
+                name: itemName
+            });
+            localStorage.setItem('playerInventory', JSON.stringify(inventory));
+            alert('You found: ' + itemName);
+            localStorage.setItem('lastScene', nextScene.split('.')[0]);
+            window.location.href = nextScene;
+        }
+        
+        // Show inventory panel
+        function showInventory() {
+            const panel = document.getElementById('inventory-panel');
+            const itemsContainer = document.getElementById('inventory-items');
+            panel.classList.remove('hidden');
+            
+            // Clear and repopulate inventory
+            itemsContainer.innerHTML = '';
+            let inventory = JSON.parse(localStorage.getItem('playerInventory'));
+            
+            if (inventory.length === 0) {
+                itemsContainer.innerHTML = '<p>Your inventory is empty.</p>';
+            } else {
+                inventory.forEach(item => {
+                    const itemElement = document.createElement('div');
+                    itemElement.className = 'inventory-item';
+                    itemElement.innerHTML = `<p>${item.name}</p>`;
+                    itemsContainer.appendChild(itemElement);
+                });
+            }
+        }
+        
+        // Hide inventory panel
+        function hideInventory() {
+            document.getElementById('inventory-panel').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>

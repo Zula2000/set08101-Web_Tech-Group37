@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!-- Sai's HTML -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Clearing - Forest Adventure</title>
+    <link rel="stylesheet" href="../css/sai_style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game-header">
+            <h1>The Forest Clearing</h1>
+            <div class="game-stats">
+                <span id="health-display">Health: 100</span>
+                <span id="inventory-button" onclick="showInventory()">Inventory</span>
+                <span id="save-button" onclick="saveGame('scene5')">Save Game</span>
+            </div>
+        </div>
+        
+        <main>
+            <section class="scene">
+                <div class="scene-content">
+                    <p>You reach a large clearing in the forest. In the center stands an old, abandoned cabin. The area around it is overgrown with weeds, suggesting no one has been here for some time.</p>
+                    <p>Beyond the clearing, you can see the forest continues, but there's a hint of open space in the distance. The cabin might contain useful supplies, or perhaps even a map.</p>
+                </div>
+                
+                <div class="scene-choices">
+                    <button onclick="addItemToInventory('compass', 'Compass', 'ending.html')">Explore the abandoned cabin</button>
+                    <button onclick="makeChoice('ending.html', 0)">Continue past the clearing toward what might be the forest edge</button>
+                    <button onclick="makeChoice('scene2.html', 5)">Rest in the clearing to regain strength (gain 5 health)</button>
+                </div>
+            </section>
+            
+            <!-- Inventory Panel (initially hidden) -->
+            <section id="inventory-panel" class="inventory hidden">
+                <h2>Your Inventory</h2>
+                <div id="inventory-items">
+                    <!-- Items will be inserted here -->
+                </div>
+                <button onclick="hideInventory()">Close Inventory</button>
+            </section>
+        </main>
+        
+        <footer>
+            <button class="small-button" onclick="window.location.href='sai_homepage.html'">Main Menu</button>
+        </footer>
+    </div>
+
+    <script>
+        // Update health display
+        document.getElementById('health-display').innerText = 'Health: ' + localStorage.getItem('playerHealth');
+        
+        // Check for game over
+        function checkHealth() {
+            let health = parseInt(localStorage.getItem('playerHealth'));
+            if (health <= 0) {
+                alert("You've lost too much health and can't continue. Game Over!");
+                window.location.href = '../sai_homepage.html';
+                return false;
+            }
+            return true;
+        }
+        
+        // Execute health check
+        checkHealth();
+        
+        // Save current game state
+        function saveGame(sceneId) {
+            localStorage.setItem('lastScene', sceneId);
+            alert('Game saved!');
+        }
+        
+        // Make a choice and navigate
+        function makeChoice(nextScene, healthChange) {
+            let health = parseInt(localStorage.getItem('playerHealth'));
+            health += healthChange;
+            localStorage.setItem('playerHealth', health.toString());
+            localStorage.setItem('lastScene', nextScene.split('.')[0]);
+            
+            if (health <= 0) {
+                alert("You've lost too much health and can't continue. Game Over!");
+                window.location.href = '../sai_homepage.html';
+                return;
+            }
+            
+            window.location.href = nextScene;
+        }
+        
+        // Add item to inventory
+        function addItemToInventory(itemId, itemName, nextScene) {
+            let inventory = JSON.parse(localStorage.getItem('playerInventory'));
+            inventory.push({
+                id: itemId,
+                name: itemName
+            });
+            localStorage.setItem('playerInventory', JSON.stringify(inventory));
+            alert('You found: ' + itemName);
+            localStorage.setItem('lastScene', nextScene.split('.')[0]);
+            window.location.href = nextScene;
+        }
+        
+        // Show inventory panel
+        function showInventory() {
+            const panel = document.getElementById('inventory-panel');
+            const itemsContainer = document.getElementById('inventory-items');
+            panel.classList.remove('hidden');
+            
+            // Clear and repopulate inventory
+            itemsContainer.innerHTML = '';
+            let inventory = JSON.parse(localStorage.getItem('playerInventory'));
+            
+            if (inventory.length === 0) {
+                itemsContainer.innerHTML = '<p>Your inventory is empty.</p>';
+            } else {
+                inventory.forEach(item => {
+                    const itemElement = document.createElement('div');
+                    itemElement.className = 'inventory-item';
+                    itemElement.innerHTML = `<p>${item.name}</p>`;
+                    itemsContainer.appendChild(itemElement);
+                });
+            }
+        }
+        
+        // Hide inventory panel
+        function hideInventory() {
+            document.getElementById('inventory-panel').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>

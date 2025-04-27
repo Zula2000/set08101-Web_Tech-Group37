@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- Sai's HTML -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safety At Last - Forest Adventure</title>
+    <link rel="stylesheet" href="../css/sai_style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game-header">
+            <h1>Safety At Last</h1>
+            <div class="game-stats">
+                <span id="health-display">Health: 100</span>
+                <span id="inventory-button" onclick="showInventory()">Inventory</span>
+            </div>
+        </div>
+        
+        <main>
+            <section class="scene ending">
+                <div class="scene-content">
+                    <p>The forest finally begins to thin out, and soon you find yourself at the edge. Below you lies a small village with smoke rising from chimneys and the warm glow of lights.</p>
+                    <p>Relief washes over you as you make your way down to the village. A local spots you emerging from the forest and quickly comes to your aid.</p>
+                    <p>"You're lucky," they tell you. "Not many who get lost in those woods find their way out."</p>
+                    <p>As you're given food, water, and a place to rest, you reflect on your journey through the forest and the choices that led you to safety.</p>
+                    <p class="ending-text">Congratulations! You've successfully escaped the forest and completed your adventure.</p>
+                    
+                    <div id="final-stats">
+                        <h3>Your Journey Summary</h3>
+                        <p>Final Health: <span id="final-health">100</span></p>
+                        <p>Items Collected: <span id="items-collected">0</span></p>
+                    </div>
+                </div>
+                
+                <div class="scene-choices ending-choices">
+                    <button onclick="resetAndPlayAgain()">Play Again</button>
+                    <button onclick="window.location.href='sai_homepage.html'">Return to Main Menu</button>
+                </div>
+            </section>
+            
+            <!-- Inventory Panel (initially hidden) -->
+            <section id="inventory-panel" class="inventory hidden">
+                <h2>Your Inventory</h2>
+                <div id="inventory-items">
+                    <!-- Items will be inserted here -->
+                </div>
+                <button onclick="hideInventory()">Close Inventory</button>
+            </section>
+        </main>
+        
+        <footer>
+            <p>&copy; 2025 Forest Adventure | ANUGU SAI VARDHAN REDDY (40733893) | Group 37</p>
+        </footer>
+    </div>
+
+    <script>
+        // Update health display
+        const health = localStorage.getItem('playerHealth');
+        document.getElementById('health-display').innerText = 'Health: ' + health;
+        document.getElementById('final-health').innerText = health;
+        
+        // Update inventory stats
+        const inventory = JSON.parse(localStorage.getItem('playerInventory'));
+        document.getElementById('items-collected').innerText = inventory.length;
+        
+        // Reset game and play again
+        function resetAndPlayAgain() {
+            localStorage.setItem('playerHealth', '100');
+            localStorage.setItem('playerInventory', JSON.stringify([]));
+            localStorage.removeItem('lastScene');
+            window.location.href = 'scene1.html';
+        }
+        
+        // Show inventory panel
+        function showInventory() {
+            const panel = document.getElementById('inventory-panel');
+            const itemsContainer = document.getElementById('inventory-items');
+            panel.classList.remove('hidden');
+            
+            // Clear and repopulate inventory
+            itemsContainer.innerHTML = '';
+            
+            if (inventory.length === 0) {
+                itemsContainer.innerHTML = '<p>Your inventory is empty.</p>';
+            } else {
+                inventory.forEach(item => {
+                    const itemElement = document.createElement('div');
+                    itemElement.className = 'inventory-item';
+                    itemElement.innerHTML = `<p>${item.name}</p>`;
+                    itemsContainer.appendChild(itemElement);
+                });
+            }
+        }
+        
+        // Hide inventory panel
+        function hideInventory() {
+            document.getElementById('inventory-panel').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!-- Sai's HTML -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest Paths - Forest Adventure</title>
+    <link rel="stylesheet" href="../css/sai_style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game-header">
+            <h1>A Choice of Paths</h1>
+            <div class="game-stats">
+                <span id="health-display">Health: 100</span>
+                <span id="inventory-button" onclick="showInventory()">Inventory</span>
+                <span id="save-button" onclick="saveGame('scene2')">Save Game</span>
+            </div>
+        </div>
+        
+        <main>
+            <section class="scene">
+                <div class="scene-content">
+                    <p>After gathering yourself, you notice there are three possible paths ahead:</p>
+                    <p>To your left, a narrow trail descends into a valley where you can hear the sound of running water. To your right, a steeper path leads up a rocky hillside. Straight ahead, the forest continues, but the underbrush seems less dense, possibly indicating a clearing or meadow ahead.</p>
+                    <p>The sun is getting lower in the sky. You need to make a choice.</p>
+                </div>
+                
+                <div class="scene-choices">
+                    <button onclick="makeChoice('scene3.html', 0)">Take the left path toward the water sound</button>
+                    <button onclick="makeChoice('scene4.html', -10)">Climb the rocky path to the right (lose 10 health from difficult climb)</button>
+                    <button onclick="makeChoice('scene5.html', 0)">Continue straight ahead toward the potential clearing</button>
+                </div>
+            </section>
+            
+            <!-- Inventory Panel (initially hidden) -->
+            <section id="inventory-panel" class="inventory hidden">
+                <h2>Your Inventory</h2>
+                <div id="inventory-items">
+                    <!-- Items will be inserted here -->
+                </div>
+                <button onclick="hideInventory()">Close Inventory</button>
+            </section>
+        </main>
+        
+        <footer>
+            <button class="small-button" onclick="window.location.href='sai_homepage.html'">Main Menu</button>
+        </footer>
+    </div>
+
+    <script>
+        // Update health display
+        document.getElementById('health-display').innerText = 'Health: ' + localStorage.getItem('playerHealth');
+        
+        // Save current game state
+        function saveGame(sceneId) {
+            localStorage.setItem('lastScene', sceneId);
+            alert('Game saved!');
+        }
+        
+        // Make a choice and navigate
+        function makeChoice(nextScene, healthChange) {
+            let health = parseInt(localStorage.getItem('playerHealth'));
+            health += healthChange;
+            localStorage.setItem('playerHealth', health.toString());
+            localStorage.setItem('lastScene', nextScene.split('.')[0]);
+            window.location.href = nextScene;
+        }
+        
+        // Show inventory panel
+        function showInventory() {
+            const panel = document.getElementById('inventory-panel');
+            const itemsContainer = document.getElementById('inventory-items');
+            panel.classList.remove('hidden');
+            
+            // Clear and repopulate inventory
+            itemsContainer.innerHTML = '';
+            let inventory = JSON.parse(localStorage.getItem('playerInventory'));
+            
+            if (inventory.length === 0) {
+                itemsContainer.innerHTML = '<p>Your inventory is empty.</p>';
+            } else {
+                inventory.forEach(item => {
+                    const itemElement = document.createElement('div');
+                    itemElement.className = 'inventory-item';
+                    itemElement.innerHTML = `<p>${item.name}</p>`;
+                    itemsContainer.appendChild(itemElement);
+                });
+            }
+        }
+        
+        // Hide inventory panel
+        function hideInventory() {
+            document.getElementById('inventory-panel').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
