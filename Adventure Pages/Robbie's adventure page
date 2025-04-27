@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!-- Forest Adventure: Lost in the Mist -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest Adventure: Lost in the Mist</title>
+    <link rel="stylesheet" href="../css/robbie.css">
+    <div class="topnav">
+        <a href="https://zula2000.github.io/set08101-Web_Tech-Group37/">Home Page</a>
+        <a href="https://zula2000.github.io/set08101-Web_Tech-Group37/Adventure%20Pages/Credits.html">Credits</a>
+    </div>
+    <br>
+</head>
+<body>
+    <header>
+        <h1>Forest Adventure: Lost in the Mist</h1>
+    </header>
+
+    <main>
+        <p id="story">You wander through a dense, misty forest where the sunlight barely breaks through the thick trees . A cold breeze blowing the leaves, and two mysterious paths appear before you.<br>Will you brave the left path or follow the right path?</p>
+        <button id="shadowTrailBtn">Take the left path</button>
+        <button id="riverPathBtn">take the right path</button>
+    </main>
+
+    <script src="../js/robbie.js"></script>
+</body>
+</html>
