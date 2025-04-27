@@ -1,20 +1,5 @@
-/* Sets the style for the first heading */
-h1 {
-  font-family: garamond;
-  font-size: 50px;
-}
-
-/* Sets the style for the second heading */
-h2 {
-  font-family: garamond;
-  font-size: 35px;
-}
-
-/* Sets the style for paragraph text */
-p {
-  font-family: garamond;
-  font-size: 20px;
-}
+/* Navbar CSS */
+/* Jamie Harris */
 
 /* Changes the colour of the background of the navbar */
 .topnav {
