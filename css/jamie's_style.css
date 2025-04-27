@@ -63,11 +63,11 @@ ul {
 #theme-btn {
   font-size: 1.5rem;
   cursor: pointer;
-  color: #596AFF;
+  color: white;
 }
 
 #theme-btn:hover {
-  color: #BB86FC;
+  color: black;
 }
 
 /* Change theme class */
