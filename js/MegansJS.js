@@ -8,6 +8,6 @@ function startGame() { const input = document.getElementById("playerName").value
   
 function updateStory(html) { document.getElementById("game").innerHTML = html; }
   
-function openChest() { updateStory(`  <p>You open the chest and find an ancient scroll and a crystal with a mysterious glow.<br> Your journey now beings!</p> `); }
+function openChest() { updateStory(`  <p>You open the chest and find an ancient scroll and a crystal with a mysterious glow!<br> Your journey now beings!</p> `); }
   
 function leaveChest() { updateStory(`  <p>You leave the chest untouched. As you walk away, a silence fills the room.<br>  Maybe some mysteries are better left unsolved.</p>  `); }
