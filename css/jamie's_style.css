@@ -31,6 +31,7 @@ ul {
   color: black;
 }
 
+/* Dark mode selector */
 .dark-mode {
   background-color: black;
   color: white;
