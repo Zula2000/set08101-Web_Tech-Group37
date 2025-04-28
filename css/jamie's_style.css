@@ -35,6 +35,18 @@ ul {
   background-color: black;
   color: white;
 }
+
+/* Buttons style*/
+.button {
+  background: #8b64e5;
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: garamond;
+}
   
 /* Centers the content on the page */
 .content {
