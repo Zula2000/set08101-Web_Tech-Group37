@@ -1,5 +1,6 @@
 <!DOCTYPE! html>
 <!-- Home Page -->
+<!-- Jamie Harris -->
 <html>
   <head>
     <title>Untitled Web Game</title>
@@ -8,6 +9,7 @@
     <div class="topnav">
       <a class="active" href="https://zula2000.github.io/set08101-Web_Tech-Group37/">Home Page</a>
       <a href="https://zula2000.github.io/set08101-Web_Tech-Group37/Adventure%20Pages/Credits.html">Credits</a>
+      <button onclick="darkMode()">Dark Mode</button>
     </div>
     <br>
   </head>
@@ -17,5 +19,11 @@
       <br>
         <a href="https://zula2000.github.io/set08101-Web_Tech-Group37/Adventure%20Pages/Adventure_Page_001.html" target="_self" class="button">Start Game</a>
     </div>
+    <script>
+      function darkMode() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+      }
+    </script>
   </body>
 </html>
