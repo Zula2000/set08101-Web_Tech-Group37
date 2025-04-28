@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     riverPathBtn.addEventListener("click", function () {
         storyText.innerHTML = "You following the path up the river and as you draw near you see a shining pot of gold sitting there, waiting for you to take it.";
-        shadowtrailBtn.remove();
+        shadowTrailBtn.remove();
         riverPathBtn.remove();
     });
 });
