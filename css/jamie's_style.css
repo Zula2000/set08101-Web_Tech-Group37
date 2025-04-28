@@ -43,7 +43,7 @@ ul {
   color: white;
   font-family: garamond;
   line-height: 50px;
-  width: 100px;
+  width: fit-content;;
   font-size: 1.2em;
   border-radius: 5px;
   border-width: 0px;
