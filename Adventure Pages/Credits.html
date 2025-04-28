@@ -9,6 +9,7 @@
     <div class="topnav">
       <a href="https://zula2000.github.io/set08101-Web_Tech-Group37/">Home Page</a>
       <a class="active" href="https://zula2000.github.io/set08101-Web_Tech-Group37/Adventure%20Pages/Credits.html">Credits</a>
+      <button onclick="darkMode()">Dark Mode</button>
     </div>
     <br>
   </head>
@@ -23,5 +24,11 @@
         Sai Vardhan
       </p>
     </div>
+    <script>
+      function darkMode() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+      }
+    </script>
   </body>
 </html>
