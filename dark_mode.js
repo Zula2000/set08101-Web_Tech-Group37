@@ -1,6 +1,5 @@
 /* Javascript for dark mode */
 /* Jamie Harris */
-
 const themeBtn = document.getElementById("theme-btn");
 themeBtn.onclick = () => {
   themeBtn.classList.toggle("fa-sun");
