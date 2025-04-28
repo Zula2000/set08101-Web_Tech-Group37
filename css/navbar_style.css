@@ -18,16 +18,6 @@
   font-family: garamond;
 }
 
-.topnav button {
-  float: left;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  font-family: garamond;
-}
-
 /* Changes the colour of the links when you hover over them */
 .topnav a:hover {
   background-color: #ddd;
