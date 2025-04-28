@@ -1,6 +1,24 @@
 // --- script.js ---
 // Robbie's JS
 
+document.addEventListener("DOMContentLoaded", function () {
+    const storyText = document.getElementById("story");
+    const shadowTrailBtn = document.getElementById("shadowTrailBtn");
+    const riverPathBtn = document.getElementById("riverPathBtn");
+
+    shadowTrailBtn.addEventListener("click", function () {
+        storyText.innerHTML = "You have died! Try again";
+        shadowTrailBtn.remove();
+        riverPathBtn.remove();
+    });
+
+    riverPathBtn.addEventListener("click", function () {
+        storyText.innerHTML = "You following the path up the river and as you draw near you see a shining pot of gold sitting there, waiting for you to take it.";
+        shadowtrailBtn.remove();
+        riverPathBtn.remove();
+    });
+});
+
 // Navigation to a different page
 function goToPage(pageId) {
     document.body.classList.add('fade-out'); // Apply fade-out effect
@@ -35,21 +53,3 @@ function clearProgress() {
     localStorage.removeItem('savedPage');
     alert("Saved progress cleared.");
 }
-
-document.addEventListener("DOMContentLoaded", function () {
-    const storyText = document.getElementById("story");
-    const shadowTrailBtn = document.getElementById("shadowTrailBtn");
-    const riverPathBtn = document.getElementById("riverPathBtn");
-
-    shadowTrailBtn.addEventListener("click", function () {
-        storyText.innerHTML = "You have died! Try again";
-        shadowTrailBtn.remove();
-        riverPathBtn.remove();
-    });
-
-    riverpathBtn.addEventListener("click", function () {
-        storyText.innerHTML = "You following the path up the river and as you draw near you see a shining pot of gold sitting there, waiting for you to take it.";
-        shadowtrailBtn.remove();
-        riverPathBtn.remove();
-    });
-});
