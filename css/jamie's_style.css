@@ -26,6 +26,16 @@ ul {
   margin: 0; /* Remove margins */
 }
 
+.body {
+  background-color: white;
+  color: black;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+  
 /* Centers the content on the page */
 .content {
   margin: auto;
