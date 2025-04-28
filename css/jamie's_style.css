@@ -46,24 +46,6 @@ ul {
   border-radius: 15px;
 }
 
-/* Buttons style*/
-.button {
-  background: #8b64e5;
-  float: left;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  font-family: garamond;
-}
-
-/* Button hover style */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
 /* Centers the homecontent on the page */
 .homeContent {
   margin: auto;
