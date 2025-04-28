@@ -26,12 +26,13 @@ ul {
   margin: 0; /* Remove margins */
 }
 
+/* Default page theme */
 .body {
   background-color: white;
   color: black;
 }
 
-/* Dark mode selector */
+/* Dark mode theme */
 .dark-mode {
   background-color: black;
   color: white;
