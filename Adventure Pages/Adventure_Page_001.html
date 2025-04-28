@@ -9,7 +9,7 @@
     <div class="topnav">
       <a href="https://zula2000.github.io/set08101-Web_Tech-Group37/">Home Page</a>
       <a href="https://zula2000.github.io/set08101-Web_Tech-Group37/Adventure%20Pages/Credits.html">Credits</a>
-      <button onclick="myFunction()">Dark Mode</button>
+      <button onclick="darkMode()">Dark Mode</button>
       <br>
     </div>
     <br>
@@ -28,6 +28,11 @@
         <a href="https://zula2000.github.io/set08101-Web_Tech-Group37/Adventure%20Pages/Megen's_Adventure_Page.html" target="_self" class="button">West</a>
       <br>
     </div>
-    <script src="dark_mode.js"></script>
+    <script>
+      function darkMode() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+      }
+    </script>
   </body>
 </html>
